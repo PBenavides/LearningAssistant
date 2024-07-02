@@ -1,0 +1,112 @@
+{
+  "topic_id": "001",
+  "topic_name": "Mathematics",
+  "subtopics": [
+    {
+      "Remember": {
+        "definition": {
+          "level": "basic",
+          "score": "8/10",
+          "strengths": "Good at recalling definitions and basic concepts.",
+          "weaknesses": "Needs improvement in quick recall under timed conditions."
+        },
+        "formulas": {
+          "level": "intermediate",
+          "score": "7/10",
+          "strengths": "Can remember important formulas.",
+          "weaknesses": "Sometimes confuses similar formulas."
+        }
+      },
+      "Understand": {
+        "theories": {
+          "level": "intermediate",
+          "score": "7.5/10",
+          "strengths": "Understands theories well.",
+          "weaknesses": "Struggles with applying theories to new contexts."
+        }
+      },
+      "Apply": {
+        "problem_solving": {
+          "level": "advanced",
+          "score": "9/10",
+          "strengths": "Excellent at applying concepts to solve problems.",
+          "weaknesses": "Occasionally overlooks simpler solutions."
+        }
+      },
+      "Analyze": {
+        "data_analysis": {
+          "level": "advanced",
+          "score": "8.5/10",
+          "strengths": "Great at breaking down complex data.",
+          "weaknesses": "Needs to improve speed of analysis."
+        }
+      },
+      "Evaluate": {
+        "critical_thinking": {
+          "level": "advanced",
+          "score": "9/10",
+          "strengths": "Strong critical thinking skills.",
+          "weaknesses": "Needs to balance criticism with constructive feedback."
+        }
+      },
+      "Create": {
+        "innovation": {
+          "level": "advanced",
+          "score": "8/10",
+          "strengths": "Very innovative and creative.",
+          "weaknesses": "Sometimes ideas are impractical."
+        }
+      }
+    },
+    {
+      "Remember": {
+        "terms": {
+          "level": "basic",
+          "score": "6/10",
+          "strengths": "Can remember basic terms.",
+          "weaknesses": "Needs to remember more advanced terms."
+        }
+      },
+      "Understand": {
+        "concepts": {
+          "level": "intermediate",
+          "score": "7/10",
+          "strengths": "Good understanding of core concepts.",
+          "weaknesses": "Struggles with complex concepts."
+        }
+      },
+      "Apply": {
+        "techniques": {
+          "level": "intermediate",
+          "score": "7/10",
+          "strengths": "Applies techniques well.",
+          "weaknesses": "Needs more practice."
+        }
+      },
+      "Analyze": {
+        "case_studies": {
+          "level": "advanced",
+          "score": "8/10",
+          "strengths": "Good at analyzing case studies.",
+          "weaknesses": "Needs to focus on minor details."
+        }
+      },
+      "Evaluate": {
+        "arguments": {
+          "level": "advanced",
+          "score": "8.5/10",
+          "strengths": "Can evaluate arguments effectively.",
+          "weaknesses": "Sometimes biased."
+        }
+      },
+      "Create": {
+        "projects": {
+          "level": "advanced",
+          "score": "9/10",
+          "strengths": "Excellent at creating projects.",
+          "weaknesses": "Needs to manage time better."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 100%; /* Adjusted to 90% of the viewport width */
+    max-width: 1800px; /* Set max-width to fit the red line bordering the screen */
+    margin: 0 auto; /* Keeps container centered */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Includes padding and border in the width and height */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"], textarea {
+    width: 100%; /* Full width of the parent element */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Includes padding and border in the width and height */
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    float: right;
+    padding: 10px 20px;
+    margin: 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Clear float */
+.input-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}

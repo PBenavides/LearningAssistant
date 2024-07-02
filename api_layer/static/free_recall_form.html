@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Free recall - Help Assistant</title>
+    <meta name="description" content="Free recall - Help Assistant">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Free recall - Learning Assistant</h1>
+        <p>Enter the title of the topic or topics you are about to write.</p>
+        <p>Consider the following feedback:</p>
+        <ol>
+            {% for weakness in weaknesses %}
+                <li>{{ weakness }}</li>
+            {% endfor %}
+        </ol>
+        <div id="content-area">
+            <form id="recall-form" action="/submit" method="post">
+                <div class="input-group">
+                    <input type="text" id="title" name="title" placeholder="Topic">
+                </div>
+                <div class="input-group">
+                    <textarea id="document" name="document" placeholder="Write here all you can recall about the topic"></textarea>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+                <!-- Loading indicator, hidden by default -->
+                <div id="loading-indicator" style="display: none;">Loading...</div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('recall-form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(form);
+
+            // Show loading indicator
+            const loadingIndicator = document.getElementById('loading-indicator');
+            loadingIndicator.style.display = 'block';
+
+            fetch('/submit', {
+                method: 'post',
+                body: formData,
+            })
+            .then(response => response.json())
+            .then(data => {
+                loadingIndicator.style.display = 'none'; // Hide loading indicator
+                const contentArea = document.getElementById('content-area');
+                contentArea.innerHTML = data.html_content; // Replace the form with the Markdown content
+            })
+            .catch(error => {
+                loadingIndicator.style.display = 'none'; // Hide loading indicator
+                console.error('Error:', error);
+            });
+        });
+    </script>
+</body>
+</html>
