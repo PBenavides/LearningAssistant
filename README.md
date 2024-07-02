@@ -7,7 +7,7 @@ The project is still in development and the current version is a prototype.
 
 ## Product:
 
-To define where the improvement is going we could use the Bloom's Taxonomy which defines six levels of cognitive learning. Based on this we can improve the system towards each specific subfield. In specific this helps also the system to maintain a JSON protocol communication making it more aligned and with control. You can see the sample in ```sample_data.json```.
+To define where the improvement is going we could use the [Bloom's Taxonomy](https://www.coloradocollege.edu/other/assessment/how-to-assess-learning/learning-outcomes/blooms-revised-taxonomy.html) which defines six levels of cognitive learning. Based on this we can improve the system towards each specific subfield. In specific this helps also the system to maintain a JSON protocol communication making it more aligned and with control. You can see the sample in ```sample_data.json```.
 
 This is an overview of the MVP:
 
