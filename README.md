@@ -26,3 +26,8 @@ Dont forget to add your OPENAI API KEYS in a .env file in the root of the projec
 ```bash
 OPENAI_API_KEY=your_api_key
 ```
+
+#### Production proposal:
+Stack: AWS, Python, Docker
+
+![ProductionDiagram](docs/static/img/AWS.png)
